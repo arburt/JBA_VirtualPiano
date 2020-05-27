@@ -13,8 +13,8 @@ function getKeyCode(key) {
 document.addEventListener("keydown", function(event) {
     key = getKeyCode(event.code)
      if (key) {
-        audio = new Audio("media/" + key + ".mp3")
-        console.log("The '" + key + "' key is pressed.")
+        audio = new Audio(`media/${key}.mp3`)
+        console.log(`The '${key}' key is pressed.`)
         audio.play().then()
     }
     else {
